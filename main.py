@@ -18,7 +18,10 @@ parameters = {
 }
 
 parameters_advanced = {
-                'removeLowDistinctiveWords':True
+                'removeCommonWords':False,
+                'removeLowOccurrenceWords': False,
+                'minimumNumberOfOccurrenceOfWords':5
+
 }
 
 dataProcess = False

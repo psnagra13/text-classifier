@@ -6,6 +6,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 import csv
 from sklearn.linear_model import SGDClassifier
+from sklearn.cross_validation import cross_val_score
 
 
 

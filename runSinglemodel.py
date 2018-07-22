@@ -17,14 +17,14 @@ with open('output/test/processedData/processedAdvancedList.pickle', 'rb') as han
 outputPath='output/models/3/'
 
 
-# gssvm(trainData,testData,outputPath)
-# #
-# gs(trainData,testData,outputPath)
-#
-# nb(trainData,testData,outputPath)
 
+'''Uncomment the Line when you want to execute the model'''
+
+# gssvm(trainData,testData,outputPath)
+# gs(trainData,testData,outputPath)
+nb(trainData,testData,outputPath)
 # svm(trainData,testData,outputPath)
 # rf(trainData,testData,outputPath)
 # dt(trainData,testData,outputPath)
 # knn(trainData,testData,outputPath)
-svc(trainData,testData,outputPath)
+# svc(trainData,testData,outputPath)

@@ -20,7 +20,7 @@ class svc:
 
       text_clf = Pipeline([('vect', CountVectorizer(ngram_range=(1,3))),
                      ('tfidf', TfidfTransformer()),
-                     ('clf', svm.SVC(gamma=0.001, C=100.)),])
+                     ('clf', svm.SVC(gamma=0.001, C=100.,probability=True)),])
       text_clf = text_clf.fit(X_train,Y_train)
 
       numpy_array = test.as_matrix()

@@ -21,7 +21,7 @@ class rf:
 
       text_clf = Pipeline([('vect', CountVectorizer(ngram_range=(1,3))),
                      ('tfidf', TfidfTransformer()),
-                     ('clf', RandomForestClassifier(n_estimators=1000  )),])
+                     ('clf', RandomForestClassifier(n_estimators=200  )),])
       text_clf = text_clf.fit(X_train,Y_train)
 
       numpy_array = test.as_matrix()

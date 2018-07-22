@@ -21,7 +21,8 @@ class knn:
 
       text_clf = Pipeline([('vect', CountVectorizer(ngram_range=(1,3))),
                      ('tfidf', TfidfTransformer()),
-                     ('clf', KNeighborsClassifier(     )),])
+                     ('clf', KNeighborsClassifier(  n_neighbors=20   )),])
+
       text_clf = text_clf.fit(X_train,Y_train)
 
       numpy_array = test.as_matrix()
